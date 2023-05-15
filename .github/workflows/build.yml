@@ -1,0 +1,53 @@
+name: 发布到 Github
+
+on: [ pull_request, workflow_dispatch ]
+
+env:
+  MINECRAFT_VERSION: 1.16.5
+  JAVA_VERSION: 17
+  VERSION: 0.1.0
+  RELEASE_NAME: 0.1.0 for Fabric (Java 17) on Minecraft 1.16.5
+  GITHUB_TOKEN: ${{secrets.PUBLISH_GITHUB_TOKEN}}
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检查环境变量
+        run: env
+
+      - name: 签出存储库
+        uses: actions/checkout@v3
+        with:
+          submodules: true
+
+      - name: 设置 Java
+        uses: actions/setup-java@v2
+        with:
+          distribution: "microsoft"
+          java-version: 17
+
+      - name: 使 Gradle Wrapper 可运行
+        if: ${{runner.os != 'Windows'}}
+        run: chmod +x ./gradlew
+
+      - name: 构建
+        run: ./gradlew clean build
+
+      - name: 发布 Github
+        uses: Kir-Antipov/mc-publish@v3.2
+        with:
+          github-tag: "v${{env.VERSION}}"
+          github-token: "${{env.GITHUB_TOKEN}}"
+
+          name: "${{env.RELEASE_NAME}}"
+          version: "${{env.VERSION}}"
+          version-type: alpha
+          changelog-file: CHANGELOG.md
+
+          loaders: fabric
+          game-versions: "${{env.MINECRAFT_VERSION}}"
+          java: "${{env.JAVA_VERSION}}"

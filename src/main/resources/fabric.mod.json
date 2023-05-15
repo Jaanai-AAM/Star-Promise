@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "star_promise",
+  "version": "0.1.0",
+
+  "name": "Star Promise",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "Jaanai",
+    "Devanaai",
+    "Aurora_Feather"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC BY-NC-ND 4.0",
+  "icon": "assets/star_promise/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.jaanai.StarPromise"
+    ]
+  },
+  "mixins": [
+    "star_promise.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.19",
+    "fabric": "*",
+    "minecraft": "~1.16.5",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

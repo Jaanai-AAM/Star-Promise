@@ -1,6 +1,7 @@
 package net.jaanai;
 
 import net.fabricmc.api.ModInitializer;
+import net.jaanai.registry.EnchantmentRegistry;
 import net.jaanai.registry.ToolRegistry;
 
 public class StarPromise implements ModInitializer {
@@ -9,5 +10,6 @@ public class StarPromise implements ModInitializer {
     @Override
     public void onInitialize() {
         ToolRegistry.register();
+        EnchantmentRegistry.register();
     }
 }

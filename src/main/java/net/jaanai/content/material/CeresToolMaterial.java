@@ -1,4 +1,4 @@
-package net.jaanai.content.item.weapon.sword;
+package net.jaanai.content.material;
 
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;

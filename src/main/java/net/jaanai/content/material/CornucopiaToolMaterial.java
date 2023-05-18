@@ -9,7 +9,7 @@ public class CornucopiaToolMaterial implements ToolMaterial {
 
     @Override
     public int getDurability() {
-        return 5000;
+        return 3000;
     }
 
     @Override

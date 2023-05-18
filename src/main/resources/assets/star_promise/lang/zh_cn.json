@@ -1,12 +1,16 @@
 {
+  "item.star_promise.apocalypse": "启示魔书",
   "item.star_promise.unwrought_providence_steel": "失魂锻神钢",
   "item.star_promise.evil_providence_steel": "恶语锻神钢",
   "item.star_promise.cornucopia_providence_steel": "丰灵锻神钢",
   "item.star_promise.ceres": "丰灵克瑞斯",
+  "item.star_promise.ares": "丰灵阿瑞斯",
   "item.star_promise.cornucopia_helmet": "丰灵头盔",
   "item.star_promise.cornucopia_chestplate": "丰灵胸甲",
   "item.star_promise.cornucopia_leggings": "丰灵护腿",
   "item.star_promise.cornucopia_boots": "丰灵靴子",
+
+  "itemGroup.star_promise.star_promise": "星落之海",
 
   "enchantment.star_promise.cornucopia_omen": "丰灵预兆"
 }

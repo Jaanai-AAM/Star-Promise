@@ -1,12 +1,16 @@
 {
+  "item.star_promise.apocalypse": "Apocalypse",
   "item.star_promise.unwrought_providence_steel": "Unwrought Providence Steel",
   "item.star_promise.evil_providence_steel": "Evil Providence Steel",
   "item.star_promise.cornucopia_providence_steel": "Cornucopia Providence Steel",
   "item.star_promise.ceres": "Ceres",
+  "item.star_promise.ares": "Ares",
   "item.star_promise.cornucopia_helmet": "Cornucopia Helmet",
   "item.star_promise.cornucopia_chestplate": "Cornucopia Chestplate",
   "item.star_promise.cornucopia_leggings": "Cornucopia Leggings",
   "item.star_promise.cornucopia_boots": "Cornucopia Boots",
+
+  "itemGroup.star_promise.star_promise": "Star Promise",
 
   "enchantment.star_promise.cornucopia_omen": "Cornucopia Omen"
 }

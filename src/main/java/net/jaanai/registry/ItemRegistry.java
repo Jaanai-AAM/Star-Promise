@@ -8,12 +8,13 @@ import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 
 public class ItemRegistry {
+    public static final Item APOCALYPSE = new Item(new FabricItemSettings().group(ItemGroupRegistry.STAR_PROMISE));
     public static final Item UNWROUGHT_PROVIDENCE_STEEL = new Item(new FabricItemSettings()
-            .rarity(Rarity.UNCOMMON).fireproof());
+            .group(ItemGroupRegistry.STAR_PROMISE).rarity(Rarity.UNCOMMON).fireproof());
     public static final Item EVIL_PROVIDENCE_STEEL = new Item(new FabricItemSettings()
-            .rarity(Rarity.EPIC).fireproof());
+            .group(ItemGroupRegistry.STAR_PROMISE).rarity(Rarity.EPIC).fireproof());
     public static final Item CORNUCOPIA_PROVIDENCE_STEEL = new Item(new FabricItemSettings()
-            .rarity(Rarity.EPIC).fireproof());
+            .group(ItemGroupRegistry.STAR_PROMISE).rarity(Rarity.EPIC).fireproof());
 
     public static void register() {
         Registry.register(Registry.ITEM, new Identifier(StarPromise.MOD_ID, "unwrought_providence_steel"),
@@ -22,5 +23,6 @@ public class ItemRegistry {
                 EVIL_PROVIDENCE_STEEL);
         Registry.register(Registry.ITEM, new Identifier(StarPromise.MOD_ID, "cornucopia_providence_steel"),
                 CORNUCOPIA_PROVIDENCE_STEEL);
+        Registry.register(Registry.ITEM, new Identifier(StarPromise.MOD_ID, "apocalypse"), APOCALYPSE);
     }
 }

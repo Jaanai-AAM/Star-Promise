@@ -22,6 +22,9 @@
   "entrypoints": {
     "main": [
       "net.jaanai.StarPromise"
+    ],
+    "client": [
+      "net.jaanai.StarPromiseClient"
     ]
   },
   "mixins": [

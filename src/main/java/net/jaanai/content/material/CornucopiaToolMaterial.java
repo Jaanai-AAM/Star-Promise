@@ -1,11 +1,11 @@
 package net.jaanai.content.material;
 
-import net.minecraft.item.Items;
+import net.jaanai.registry.ItemRegistry;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
-public class CeresToolMaterial implements ToolMaterial {
-    public static final CeresToolMaterial INSTANCE = new CeresToolMaterial();
+public class CornucopiaToolMaterial implements ToolMaterial {
+    public static final CornucopiaToolMaterial INSTANCE = new CornucopiaToolMaterial();
 
     @Override
     public int getDurability() {
@@ -19,7 +19,7 @@ public class CeresToolMaterial implements ToolMaterial {
 
     @Override
     public float getAttackDamage() {
-        return 8.0F;
+        return 8.5F;
     }
 
     @Override
@@ -29,11 +29,11 @@ public class CeresToolMaterial implements ToolMaterial {
 
     @Override
     public int getEnchantability() {
-        return 50;
+        return 25;
     }
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(Items.DIAMOND);
+        return Ingredient.ofItems(ItemRegistry.CORNUCOPIA_PROVIDENCE_STEEL);
     }
 }

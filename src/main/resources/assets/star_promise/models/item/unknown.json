@@ -1,0 +1,26 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "star_promise:item/unknown"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "step": 1
+      },
+      "model": "star_promise:item/unknown_1"
+    },
+    {
+      "predicate": {
+        "step": 2
+      },
+      "model": "star_promise:item/unknown_2"
+    },
+    {
+      "predicate": {
+        "step": 3
+      },
+      "model": "star_promise:item/unknown_3"
+    }
+  ]
+}

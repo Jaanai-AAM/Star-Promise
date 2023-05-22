@@ -11,6 +11,7 @@ public class ItemGroupRegistry {
                     new Identifier(StarPromise.MOD_ID, "star_promise"))
             .icon(() -> new ItemStack(ToolRegistry.CERES))
             .appendItems(stacks -> {
+                stacks.add(new ItemStack(ItemRegistry.UNKNOWN));
                 stacks.add(new ItemStack(ItemRegistry.APOCALYPSE));
                 stacks.add(new ItemStack(ItemRegistry.UNWROUGHT_PROVIDENCE_STEEL));
                 stacks.add(new ItemStack(ItemRegistry.EVIL_PROVIDENCE_STEEL));

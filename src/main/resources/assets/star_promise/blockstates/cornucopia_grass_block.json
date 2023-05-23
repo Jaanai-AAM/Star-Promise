@@ -1,0 +1,24 @@
+{
+  "variants": {
+    "snowy=false": [
+      {
+        "model": "star_promise:block/cornucopia_grass_block"
+      },
+      {
+        "model": "star_promise:block/cornucopia_grass_block",
+        "y": 90
+      },
+      {
+        "model": "star_promise:block/cornucopia_grass_block",
+        "y": 180
+      },
+      {
+        "model": "star_promise:block/cornucopia_grass_block",
+        "y": 270
+      }
+    ],
+    "snowy=true": {
+      "model": "star_promise:block/cornucopia_grass_block_snow"
+    }
+  }
+}

@@ -4,8 +4,8 @@ import net.jaanai.registry.ItemRegistry;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
-public class CornucopiaToolMaterial implements ToolMaterial {
-    public static final CornucopiaToolMaterial INSTANCE = new CornucopiaToolMaterial();
+public class EvilToolMaterial implements ToolMaterial {
+    public static final EvilToolMaterial INSTANCE = new EvilToolMaterial();
 
     @Override
     public int getDurability() {
@@ -29,11 +29,11 @@ public class CornucopiaToolMaterial implements ToolMaterial {
 
     @Override
     public int getEnchantability() {
-        return 25;
+        return -50;
     }
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(ItemRegistry.CORNUCOPIA_PROVIDENCE_STEEL);
+        return Ingredient.ofItems(ItemRegistry.EVIL_PROVIDENCE_STEEL);
     }
 }

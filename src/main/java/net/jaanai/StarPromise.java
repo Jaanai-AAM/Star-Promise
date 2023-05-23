@@ -11,6 +11,7 @@ public class StarPromise implements ModInitializer {
         ItemRegistry.register();
         ToolRegistry.register();
         ArmorRegistry.register();
+        BlockRegistry.register();
         EnchantmentRegistry.register();
         ParticleRegistry.register();
     }

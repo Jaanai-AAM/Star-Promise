@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column_horizontal",
+  "textures": {
+    "end": "star_promise:block/cornucopia_forest_log_top",
+    "side": "star_promise:block/cornucopia_forest_log"
+  }
+}

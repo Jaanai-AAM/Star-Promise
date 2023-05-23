@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "star_promise:block/cornucopia_forest_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "star_promise:block/cornucopia_forest_log"
+    },
+    "axis=z": {
+      "model": "star_promise:block/cornucopia_forest_log_horizontal",
+      "x": 90
+    }
+  }
+}

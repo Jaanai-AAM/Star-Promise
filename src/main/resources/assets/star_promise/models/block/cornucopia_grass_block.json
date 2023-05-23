@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "block/dirt",
+    "bottom": "star_promise:block/cornucopia_grass_block_bottom",
+    "top": "star_promise:block/cornucopia_grass_block_top",
+    "side": "star_promise:block/cornucopia_grass_block_side"
+  }
+}

@@ -17,6 +17,10 @@ public class ItemRegistry {
             .group(ItemGroupRegistry.STAR_PROMISE).rarity(Rarity.EPIC).fireproof());
     public static final Item CORNUCOPIA_PROVIDENCE_STEEL = new Item(new FabricItemSettings()
             .group(ItemGroupRegistry.STAR_PROMISE).rarity(Rarity.EPIC).fireproof());
+    public static final Item BROKEN_CRYSTAL_STALWART_SWORD = new Item(new FabricItemSettings()
+            .group(ItemGroupRegistry.STAR_PROMISE).fireproof());
+    public static final Item CRYSTAL_CORE_GEM = new Item(new FabricItemSettings()
+            .group(ItemGroupRegistry.STAR_PROMISE).rarity(Rarity.RARE).fireproof());
 
     public static void register() {
         Registry.register(Registry.ITEM, new Identifier(StarPromise.MOD_ID, "unknown"), UNKNOWN);
@@ -27,5 +31,9 @@ public class ItemRegistry {
                 EVIL_PROVIDENCE_STEEL);
         Registry.register(Registry.ITEM, new Identifier(StarPromise.MOD_ID, "cornucopia_providence_steel"),
                 CORNUCOPIA_PROVIDENCE_STEEL);
+        Registry.register(Registry.ITEM, new Identifier(StarPromise.MOD_ID, "broken_crystal_stalwart_sword"),
+                BROKEN_CRYSTAL_STALWART_SWORD);
+        Registry.register(Registry.ITEM, new Identifier(StarPromise.MOD_ID, "crystal_core_gem"),
+                CRYSTAL_CORE_GEM);
     }
 }

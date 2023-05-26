@@ -1,7 +1,7 @@
 package net.jaanai.registry;
 
 import net.jaanai.StarPromise;
-import net.jaanai.content.item.tool.Ares;
+import net.jaanai.content.item.tool.Axes;
 import net.jaanai.content.material.CornucopiaToolMaterial;
 import net.jaanai.content.material.CrystalToolMaterial;
 import net.jaanai.content.material.DeactivatedCrystalToolMaterial;
@@ -17,7 +17,7 @@ public class ToolRegistry {
     public static final ToolItem CERES = new SwordItem(CornucopiaToolMaterial.INSTANCE,
             3, -2.2F, new Item.Settings()
             .group(ItemGroupRegistry.STAR_PROMISE).rarity(Rarity.EPIC).fireproof());
-    public static final ToolItem ARES = new Ares(CornucopiaToolMaterial.INSTANCE,
+    public static final ToolItem ARES = new Axes(CornucopiaToolMaterial.INSTANCE,
             8.0F, -3.2F, new Item.Settings()
             .group(ItemGroupRegistry.STAR_PROMISE).rarity(Rarity.RARE).fireproof());
     public static final ToolItem CERES_DAGGER = new SwordItem(CornucopiaToolMaterial.INSTANCE,

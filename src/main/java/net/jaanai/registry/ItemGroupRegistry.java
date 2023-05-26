@@ -14,6 +14,8 @@ public class ItemGroupRegistry {
                 stacks.add(new ItemStack(BlockRegistry.CORNUCOPIA_GRASS_BLOCK));
                 stacks.add(new ItemStack(BlockRegistry.CORNUCOPIA_FOREST_LOG));
                 stacks.add(new ItemStack(BlockRegistry.CORNUCOPIA_FOREST_PLANKS));
+                stacks.add(new ItemStack(BlockRegistry.PROVIDENCE_ORE));
+                stacks.add(new ItemStack(BlockRegistry.CRYSTAL_ORE));
                 stacks.add(new ItemStack(ItemRegistry.UNKNOWN));
                 stacks.add(new ItemStack(ItemRegistry.APOCALYPSE));
                 stacks.add(new ItemStack(ItemRegistry.UNWROUGHT_PROVIDENCE_STEEL));

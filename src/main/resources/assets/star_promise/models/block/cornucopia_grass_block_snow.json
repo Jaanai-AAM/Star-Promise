@@ -1,8 +1,8 @@
 {
-  "parent": "block/cube_bottom_top",
+  "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "particle": "block/dirt",
-    "top": "block/grass_block_top",
+    "particle": "minecraft:block/dirt",
+    "top": "minecraft:block/grass_block_top",
     "bottom": "star_promise:block/cornucopia_grass_block_bottom",
     "side": "star_promise:block/cornucopia_grass_block_snow"
   }

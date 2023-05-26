@@ -1,5 +1,5 @@
 {
-  "parent": "block/cube_column",
+  "parent": "minecraft:block/cube_column",
   "textures": {
     "end": "star_promise:block/cornucopia_forest_log_top",
     "side": "star_promise:block/cornucopia_forest_log"

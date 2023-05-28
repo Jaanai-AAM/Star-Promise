@@ -1,40 +1,39 @@
 package net.jaanai.content.material;
 
-import net.jaanai.registry.ItemRegistry;
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
-public class DeactivatedCrystalToolMaterial implements ToolMaterial {
-    public static final DeactivatedCrystalToolMaterial INSTANCE = new DeactivatedCrystalToolMaterial();
+public class AmethystToolMaterial implements ToolMaterial {
+    public static final AmethystToolMaterial INSTANCE = new AmethystToolMaterial();
 
     @Override
     public int getDurability() {
-        return 250;
+        return 2031;
     }
 
     @Override
     public float getMiningSpeedMultiplier() {
-        return 12.0F;
+        return 9.0F;
     }
 
     @Override
     public float getAttackDamage() {
-        return 0.0F;
+        return 5.0F;
     }
 
     @Override
     public int getMiningLevel() {
-        return 0;
+        return 4;
     }
 
     @Override
     public int getEnchantability() {
-        return 0;
+        return 15;
     }
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(ItemRegistry.CRYSTAL);
+        return Ingredient.ofItems(Items.DIAMOND);
     }
 }

@@ -1,5 +1,6 @@
 package net.jaanai.content.material;
 
+import net.jaanai.registry.ItemRegistry;
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
@@ -9,7 +10,7 @@ public class CrystalToolMaterial implements ToolMaterial {
 
     @Override
     public int getDurability() {
-        return 3000;
+        return 250;
     }
 
     @Override
@@ -19,21 +20,21 @@ public class CrystalToolMaterial implements ToolMaterial {
 
     @Override
     public float getAttackDamage() {
-        return 11.0F;
+        return 2.0F;
     }
 
     @Override
     public int getMiningLevel() {
-        return 3;
+        return 2;
     }
 
     @Override
     public int getEnchantability() {
-        return 15;
+        return 22;
     }
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(Items.DIAMOND);
+        return Ingredient.ofItems(ItemRegistry.CRYSTAL);
     }
 }

@@ -3,6 +3,7 @@ package net.jaanai.registry;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.jaanai.StarPromise;
+import net.jaanai.content.block.EvilSmithingTable;
 import net.jaanai.content.block.Ores;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
@@ -21,6 +22,11 @@ public class BlockRegistry {
             .of(Material.STONE).requiresTool().strength(50.0F, 1200.0F));
     public static final Block CRYSTAL_ORE = new Ores(FabricBlockSettings
             .of(Material.STONE).requiresTool().strength(3.0F, 3.0F));
+    public static final Block DUSTY_EVIL_SMITHING_TABLE = new EvilSmithingTable(FabricBlockSettings
+            .of(Material.WOOD).strength(-1.0F, 3600000.0F).dropsNothing()
+            .sounds(BlockSoundGroup.WOOD));
+    public static final Block EVIL_SMITHING_TABLE = new EvilSmithingTable(FabricBlockSettings
+            .of(Material.WOOD).strength(2.5F).sounds(BlockSoundGroup.WOOD));
 
     public static void register() {
         Registry.register(Registry.BLOCK, new Identifier(StarPromise.MOD_ID, "cornucopia_grass_block"),
@@ -38,10 +44,19 @@ public class BlockRegistry {
                         .group(ItemGroupRegistry.STAR_PROMISE)));
         Registry.register(Registry.BLOCK, new Identifier(StarPromise.MOD_ID, "providence_ore"), PROVIDENCE_ORE);
         Registry.register(Registry.ITEM, new Identifier(StarPromise.MOD_ID, "providence_ore"),
-                new BlockItem(PROVIDENCE_ORE, new FabricItemSettings().group(ItemGroupRegistry.STAR_PROMISE)
-                        .fireproof()));
+                new BlockItem(PROVIDENCE_ORE, new FabricItemSettings()
+                        .group(ItemGroupRegistry.STAR_PROMISE).fireproof()));
         Registry.register(Registry.BLOCK, new Identifier(StarPromise.MOD_ID, "crystal_ore"), CRYSTAL_ORE);
         Registry.register(Registry.ITEM, new Identifier(StarPromise.MOD_ID, "crystal_ore"),
                 new BlockItem(CRYSTAL_ORE, new FabricItemSettings().group(ItemGroupRegistry.STAR_PROMISE)));
+        Registry.register(Registry.BLOCK, new Identifier(StarPromise.MOD_ID, "dusty_evil_smithing_table"),
+                DUSTY_EVIL_SMITHING_TABLE);
+        Registry.register(Registry.ITEM, new Identifier(StarPromise.MOD_ID, "dusty_evil_smithing_table"),
+                new BlockItem(DUSTY_EVIL_SMITHING_TABLE, new FabricItemSettings()
+                        .group(ItemGroupRegistry.STAR_PROMISE)));
+        Registry.register(Registry.BLOCK, new Identifier(StarPromise.MOD_ID, "evil_smithing_table"),
+                EVIL_SMITHING_TABLE);
+        Registry.register(Registry.ITEM, new Identifier(StarPromise.MOD_ID, "evil_smithing_table"),
+                new BlockItem(EVIL_SMITHING_TABLE, new FabricItemSettings().group(ItemGroupRegistry.STAR_PROMISE)));
     }
 }

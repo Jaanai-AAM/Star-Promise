@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "star_promise:block/evil_smithing_table_top",
+    "side": "star_promise:block/dusty_evil_smithing_table"
+  }
+}

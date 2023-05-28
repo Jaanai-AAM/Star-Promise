@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "star_promise:item/risay_gold_coin"
+  }
+}

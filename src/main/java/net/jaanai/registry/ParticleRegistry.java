@@ -26,26 +26,21 @@ public class ParticleRegistry {
     }
 
     public static void registerClient() {
-        ClientSpriteRegistryCallback.event(PlayerScreenHandler.BLOCK_ATLAS_TEXTURE)
-                .register((atlasTexture, registry) -> {
-                    registry.register(new Identifier(StarPromise.MOD_ID, "particle/hunger"));
-                });
-        ClientSpriteRegistryCallback.event(PlayerScreenHandler.BLOCK_ATLAS_TEXTURE)
-                .register((atlasTexture, registry) -> {
-                    registry.register(new Identifier(StarPromise.MOD_ID, "particle/slowness"));
-                });
-        ClientSpriteRegistryCallback.event(PlayerScreenHandler.BLOCK_ATLAS_TEXTURE)
-                .register((atlasTexture, registry) -> {
-                    registry.register(new Identifier(StarPromise.MOD_ID, "particle/poison"));
-                });
-        ClientSpriteRegistryCallback.event(PlayerScreenHandler.BLOCK_ATLAS_TEXTURE)
-                .register((atlasTexture, registry) -> {
-                    registry.register(new Identifier(StarPromise.MOD_ID, "particle/absorption"));
-                });
-        ClientSpriteRegistryCallback.event(PlayerScreenHandler.BLOCK_ATLAS_TEXTURE)
-                .register((atlasTexture, registry) -> {
-                    registry.register(new Identifier(StarPromise.MOD_ID, "particle/health_boost"));
-                });
+        ClientSpriteRegistryCallback.event(PlayerScreenHandler.BLOCK_ATLAS_TEXTURE).register((atlasTexture, registry) -> {
+            registry.register(new Identifier(StarPromise.MOD_ID, "particle/hunger"));
+        });
+        ClientSpriteRegistryCallback.event(PlayerScreenHandler.BLOCK_ATLAS_TEXTURE).register((atlasTexture, registry) -> {
+            registry.register(new Identifier(StarPromise.MOD_ID, "particle/slowness"));
+        });
+        ClientSpriteRegistryCallback.event(PlayerScreenHandler.BLOCK_ATLAS_TEXTURE).register((atlasTexture, registry) -> {
+            registry.register(new Identifier(StarPromise.MOD_ID, "particle/poison"));
+        });
+        ClientSpriteRegistryCallback.event(PlayerScreenHandler.BLOCK_ATLAS_TEXTURE).register((atlasTexture, registry) -> {
+            registry.register(new Identifier(StarPromise.MOD_ID, "particle/absorption"));
+        });
+        ClientSpriteRegistryCallback.event(PlayerScreenHandler.BLOCK_ATLAS_TEXTURE).register((atlasTexture, registry) -> {
+            registry.register(new Identifier(StarPromise.MOD_ID, "particle/health_boost"));
+        });
 
         ParticleFactoryRegistry.getInstance().register(ParticleRegistry.HUNGER, FlameParticle.Factory::new);
         ParticleFactoryRegistry.getInstance().register(ParticleRegistry.SLOWNESS, FlameParticle.Factory::new);

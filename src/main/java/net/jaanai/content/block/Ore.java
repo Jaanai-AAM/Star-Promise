@@ -7,8 +7,8 @@ import net.minecraft.util.math.MathHelper;
 
 import java.util.Random;
 
-public class Ores extends OreBlock {
-    public Ores(AbstractBlock.Settings settings) {
+public class Ore extends OreBlock {
+    public Ore(AbstractBlock.Settings settings) {
         super(settings);
     }
 

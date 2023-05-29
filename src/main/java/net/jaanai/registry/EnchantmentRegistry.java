@@ -10,7 +10,6 @@ public class EnchantmentRegistry {
     public static final Enchantment CORNUCOPIA_OMEN = new CornucopiaOmenEnchantment();
 
     public static void register() {
-        Registry.register(Registry.ENCHANTMENT, new Identifier(StarPromise.MOD_ID, "cornucopia_omen"),
-                CORNUCOPIA_OMEN);
+        Registry.register(Registry.ENCHANTMENT, new Identifier(StarPromise.MOD_ID, "cornucopia_omen"), CORNUCOPIA_OMEN);
     }
 }
